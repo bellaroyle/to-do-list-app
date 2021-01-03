@@ -1,8 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import {
   StyleSheet,
-  Text,
   View,
   FlatList,
   Alert,
@@ -16,9 +14,9 @@ import AddTodo from "./components/AddTodo";
 
 export default function App() {
   const [todos, setTodos] = useState([
-    { text: "buy coffee", key: "1" },
-    { text: "create todo app", key: "2" },
-    { text: "make dinner", key: "3" },
+    { text: "Finish coffee", key: "1" },
+    { text: "Create to-do app", key: "2" },
+    { text: "Make dinner", key: "3" },
   ]);
 
   const pressHandler = (key) => {
@@ -68,8 +66,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   content: {
     flex: 1,
